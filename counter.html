@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js" defer></script>
+    <script src="counter.js" defer></script>
+    
+</head>
+<body>
+
+    <h1>WIDGETS</h1>
+
+    <h2>Increment/decrement</h2>
+
+    <div>
+        <div class="counter" >0</div>
+        <div>
+              <button class="increment" >Increment</button>
+              <button class="decrement" >Decrement</button>
+        </div>
+   </div>
+   <hr>
+
+   <script src="//unpkg.com/alpinejs" defer></script>
+
+   <div x-data="counter()">
+    <h1>Counter</h1>
+    <div class="counter" x-text="count"></div>
+    <div>
+      <button @click="increment()">+</button>
+      <button @click="decrement()">-</button>
+    </div>
+  </div>
+  <hr>
+
+</body>
+</html>
